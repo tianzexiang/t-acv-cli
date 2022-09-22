@@ -1,0 +1,19 @@
+{
+  "name": "acv-cli",
+  "version": "0.0.1",
+  "description": "simply create cli by shell",
+  "main": "scripts/index.js",
+  "author": "tianzexiang",
+  "license": "ISC",
+  "bin": {
+    "acv": "scripts/index.js"
+  },
+  "dependencies": {
+    "commander": "^9.4.0",
+    "ejs": "^3.1.8"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.1.1",
+    "@types/node": "^18.7.18"
+  }
+}
