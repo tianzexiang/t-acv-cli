@@ -28,7 +28,7 @@ async function createVueTemplate(
 ) {
   const templatePath = framework
     ? path.resolve(framework)
-    : path.resolve('templates/t-vue.ejs')
+    : path.resolve(__dirname,'../../../templates/t-vue.ejs')
   const component = await compile(templatePath, { filename })
   const componentPath = path.resolve(targetDest, `${filename}.vue`)
   if (createDir(targetDest) && component) {
@@ -41,8 +41,8 @@ async function createReactTemplate(
   framework?: string
 ) {
   const templatePath = framework
-    ? path.join('/', framework)
-    : path.resolve('templates/t-vue.ejs')
+    ? path.resolve(framework)
+    : path.resolve(__dirname, '../../../templates/t-react.ejs')
   const component = await compile(templatePath, { filename })
   const componentPath = path.resolve(targetDest, `index.tsx`)
   const stylePath = path.resolve(targetDest, `style.module.css`)
