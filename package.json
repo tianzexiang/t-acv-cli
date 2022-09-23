@@ -1,10 +1,17 @@
 {
-  "name": "acv-cli",
+  "name": "t-acv-cli",
   "version": "0.0.1",
-  "description": "simply create cli by shell",
+  "description": "simply create component by shell",
   "main": "scripts/index.js",
   "author": "tianzexiang",
-  "license": "ISC",
+  "keywords": [
+    "vue",
+    "react",
+    "shell",
+    "component",
+    "cli"
+  ],
+  "license": "MIT",
   "bin": {
     "acv": "scripts/index.js"
   },
@@ -13,12 +20,16 @@
     "dev": "tsc --watch"
   },
   "dependencies": {
+    "chalk": "^5.0.1",
     "commander": "^9.4.0",
-    "ejs": "^3.1.8"
+    "ejs": "^3.1.8",
+    "inquirer": "^9.1.2",
+    "validate-npm-package-name": "^4.0.0"
   },
   "devDependencies": {
     "@types/ejs": "^3.1.1",
     "@types/node": "^18.7.18",
+    "@types/validate-npm-package-name": "^4.0.0",
     "tslib": "^2.4.0",
     "typescript": "^4.8.3"
   }

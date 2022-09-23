@@ -16,7 +16,7 @@ const helpOptions = () => {
 const createCommands = () => {
   const options = program.opts()
   program
-    .command('addcpn <name>')
+    .command('cpn <name>')
     .description('自动创建组件')
     .option('-d', '指定创建目录')
     .action(name => {

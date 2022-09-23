@@ -1,5 +1,3 @@
-import {addComponentAction} from './addcpn'
+import { addComponentAction } from './addcpn'
 
-export {
-  addComponentAction
-}
+export { addComponentAction }
